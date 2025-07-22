@@ -1,0 +1,257 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'Pokemon';
+    src: url('../fontes/Arcane\ Nine.otf') format('opentype');
+}
+
+:root {
+    --cor0: #a83a1b;
+    --cor1: #449a1c;
+    --cor2: #32417C;
+    --cor3: #2741A7;
+    --cor4: #262833;
+    --cor5: #a6bfff;
+    --cor6: #ee5429;
+    --cor7: #65e02c;
+
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-principal: "Tomorrow", sans-serif;
+    --fonte-pokemon: Pokemon, cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fonte-padrao);
+    background-image: linear-gradient(to right, var(--cor0), var(--cor1));
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor3));
+    text-align: center;
+    min-height: 100px;
+    padding: 30px 10px 15px 10px;
+}
+
+header > h1 {
+    color: white;
+    font-size: 2.1em;
+    font-family: var(--fonte-principal);
+    padding-bottom: 10px;
+    text-shadow: 2px 2px 5px black;
+}
+
+header > p {
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px black;
+}
+
+nav {
+    background-color: var(--cor3);
+    text-align: center;
+    padding: 10px 0px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.574);
+}
+
+nav > a {
+    color: var(--cor5);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 10px 2px;
+    transition-duration: 0.2s;
+}
+
+nav > a:hover {
+    color: black;
+    background-color: #7789d5;
+}
+
+
+main {
+    min-width: 280px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 40px;
+    background-color: white;
+    border-radius: 0px 0px 5px 5px;
+    padding: 25px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.441);
+}
+
+main h1{
+    font-family: var(--fonte-pokemon);
+    font-size: 2em;
+    
+}
+
+
+main h2 {
+    font-family: var(--fonte-pokemon);
+}
+
+main p {
+    text-align: justify;
+    padding: 10px;
+    margin-bottom: 20px;
+    line-height: 25px;
+    text-indent: 20px;
+}
+
+main img {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: auto;
+}
+
+main article > ul {
+    padding: 25px;
+    li {
+        margin: 20px 0px;
+    }
+}
+
+.fexclusivos {
+    background-color: var(--cor6);
+    padding: 30px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.fexclusivos h2 {
+    background-color: var(--cor0);
+    padding: 20px;
+    margin: -30px -30px 0 -30px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.fexclusivos ul{
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+.fexclusivos li {
+    margin: 10px 0px;
+}
+
+.lexclusivos {
+    background-color: var(--cor7);
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.lexclusivos h2 {
+    background-color: var(--cor1);
+    padding: 20px;
+    margin: -30px -30px 0 -30px;
+    border-radius: 5px 5px 0px 0px;   
+}
+
+.lexclusivos ul {
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+.lexclusivos li {
+    margin: 10px 0px;
+}
+
+div.video {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 57%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+a.bulbassauro{
+    color: green;
+    background-color: rgb(204, 245, 204);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    transition-duration: 0.2s;
+    border-radius: 5px;
+}
+
+a.bulbassauro:hover {
+    color: white;
+    background-color: rgb(81, 155, 81);
+    border-radius: 5px;
+}
+
+a.charmander {
+    color: orangered;
+    background-color: rgb(255, 221, 208);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    transition-duration: 0.2s;
+    border-radius: 5px;
+}
+
+a.charmander:hover {
+    color: white;
+    background-color: rgb(159, 99, 77);
+    border-radius: 5px;
+}
+
+a.squirtle {
+    color: blue;
+    background-color: rgb(202, 202, 254);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    transition-duration: 0.2s;
+    border-radius: 5px;
+}
+
+a.squirtle:hover {
+    color: white;
+    background-color: rgb(81, 81, 153);
+    border-radius: 5px;
+}
+
+aside {
+    background-color: #7789d5;
+    margin: 40px 0px;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.273);
+}
+
+aside > h2 {
+    color: var(--cor5);
+    background-color: var(--cor3);
+    margin: -30px -30px 20px -30px;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.393);
+}
+
+footer {
+    background-color: black;
+    padding: 20px;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
